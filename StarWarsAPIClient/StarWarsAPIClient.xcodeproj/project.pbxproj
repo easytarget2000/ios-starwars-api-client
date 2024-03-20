@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		30A84C6D2BAB03CC00CA5BAE /* StarWarsAPIClientApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A84C6C2BAB03CC00CA5BAE /* StarWarsAPIClientApp.swift */; };
+		30A84C6D2BAB03CC00CA5BAE /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A84C6C2BAB03CC00CA5BAE /* App.swift */; };
 		30A84C6F2BAB03CC00CA5BAE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A84C6E2BAB03CC00CA5BAE /* ContentView.swift */; };
 		30A84C712BAB03CC00CA5BAE /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A84C702BAB03CC00CA5BAE /* Item.swift */; };
 		30A84C732BAB03CD00CA5BAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30A84C722BAB03CD00CA5BAE /* Assets.xcassets */; };
@@ -36,7 +36,7 @@
 
 /* Begin PBXFileReference section */
 		30A84C692BAB03CC00CA5BAE /* StarWarsAPIClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarWarsAPIClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		30A84C6C2BAB03CC00CA5BAE /* StarWarsAPIClientApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsAPIClientApp.swift; sourceTree = "<group>"; };
+		30A84C6C2BAB03CC00CA5BAE /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		30A84C6E2BAB03CC00CA5BAE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		30A84C702BAB03CC00CA5BAE /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		30A84C722BAB03CD00CA5BAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -96,7 +96,7 @@
 		30A84C6B2BAB03CC00CA5BAE /* StarWarsAPIClient */ = {
 			isa = PBXGroup;
 			children = (
-				30A84C6C2BAB03CC00CA5BAE /* StarWarsAPIClientApp.swift */,
+				30A84C6C2BAB03CC00CA5BAE /* App.swift */,
 				30A84C6E2BAB03CC00CA5BAE /* ContentView.swift */,
 				30A84C702BAB03CC00CA5BAE /* Item.swift */,
 				30A84C722BAB03CD00CA5BAE /* Assets.xcassets */,
@@ -262,7 +262,7 @@
 			files = (
 				30A84C6F2BAB03CC00CA5BAE /* ContentView.swift in Sources */,
 				30A84C712BAB03CC00CA5BAE /* Item.swift in Sources */,
-				30A84C6D2BAB03CC00CA5BAE /* StarWarsAPIClientApp.swift in Sources */,
+				30A84C6D2BAB03CC00CA5BAE /* App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
