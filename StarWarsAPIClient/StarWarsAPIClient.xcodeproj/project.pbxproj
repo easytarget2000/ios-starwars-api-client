@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		30A84C6D2BAB03CC00CA5BAE /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A84C6C2BAB03CC00CA5BAE /* App.swift */; };
 		30A84C6F2BAB03CC00CA5BAE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A84C6E2BAB03CC00CA5BAE /* ContentView.swift */; };
-		30A84C712BAB03CC00CA5BAE /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A84C702BAB03CC00CA5BAE /* Item.swift */; };
+		30A84C712BAB03CC00CA5BAE /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A84C702BAB03CC00CA5BAE /* Character.swift */; };
 		30A84C732BAB03CD00CA5BAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30A84C722BAB03CD00CA5BAE /* Assets.xcassets */; };
 		30A84C762BAB03CD00CA5BAE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30A84C752BAB03CD00CA5BAE /* Preview Assets.xcassets */; };
 		30A84C802BAB03CD00CA5BAE /* StarWarsAPIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A84C7F2BAB03CD00CA5BAE /* StarWarsAPIClientTests.swift */; };
@@ -38,7 +38,7 @@
 		30A84C692BAB03CC00CA5BAE /* StarWarsAPIClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarWarsAPIClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30A84C6C2BAB03CC00CA5BAE /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		30A84C6E2BAB03CC00CA5BAE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		30A84C702BAB03CC00CA5BAE /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		30A84C702BAB03CC00CA5BAE /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		30A84C722BAB03CD00CA5BAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30A84C752BAB03CD00CA5BAE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		30A84C7B2BAB03CD00CA5BAE /* StarWarsAPIClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarWarsAPIClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,6 +73,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3029F7752BAB397C00DFAF77 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				30A84C702BAB03CC00CA5BAE /* Character.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		30A84C602BAB03CC00CA5BAE = {
 			isa = PBXGroup;
 			children = (
@@ -98,8 +106,8 @@
 			children = (
 				30A84C6C2BAB03CC00CA5BAE /* App.swift */,
 				30A84C6E2BAB03CC00CA5BAE /* ContentView.swift */,
-				30A84C702BAB03CC00CA5BAE /* Item.swift */,
 				30A84C722BAB03CD00CA5BAE /* Assets.xcassets */,
+				3029F7752BAB397C00DFAF77 /* Model */,
 				30A84C742BAB03CD00CA5BAE /* Preview Content */,
 			);
 			path = StarWarsAPIClient;
@@ -261,7 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				30A84C6F2BAB03CC00CA5BAE /* ContentView.swift in Sources */,
-				30A84C712BAB03CC00CA5BAE /* Item.swift in Sources */,
+				30A84C712BAB03CC00CA5BAE /* Character.swift in Sources */,
 				30A84C6D2BAB03CC00CA5BAE /* App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
