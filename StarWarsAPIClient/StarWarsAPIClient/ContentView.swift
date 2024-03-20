@@ -2,12 +2,12 @@ import SwiftUI
 import SwiftData
 
 struct ContentView: View {
-    private var characters = [Character]()
+    let repository: CharacterRepository
 
     var body: some View {
         NavigationSplitView {
             List {
-                ForEach(self.characters) { character in
+                ForEach(self.repository.query()) { character in
                     NavigationLink {
                         Text(character.name)
                     } label: {
@@ -22,5 +22,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    ContentView(repository: SampleCharacterRepository())
 }

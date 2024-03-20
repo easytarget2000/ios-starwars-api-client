@@ -5,7 +5,7 @@ import SwiftData
 struct App: SwiftUI.App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(repository: SampleCharacterRepository())
         }
     }
 }
