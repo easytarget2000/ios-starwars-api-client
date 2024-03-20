@@ -1,10 +1,3 @@
-//
-//  StarWarsAPIClientUITestsLaunchTests.swift
-//  StarWarsAPIClientUITests
-//
-//  Created by Mitch on 20.03.24.
-//
-
 import XCTest
 
 final class StarWarsAPIClientUITestsLaunchTests: XCTestCase {

@@ -1,10 +1,3 @@
-//
-//  StarWarsAPIClientTests.swift
-//  StarWarsAPIClientTests
-//
-//  Created by Mitch on 20.03.24.
-//
-
 import XCTest
 @testable import StarWarsAPIClient
 
