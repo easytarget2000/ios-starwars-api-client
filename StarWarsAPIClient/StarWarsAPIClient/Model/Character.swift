@@ -15,8 +15,8 @@ internal struct Character: Identifiable {
     let hairColor: String
     let eyeColor: String
     let cybernetics: String
-    let affiliationNames: String
-    let formerAffiliationNames: String
-    let masterNames: String
-    let apprenticeNames: String
+    let affiliationNames: [String]
+    let formerAffiliationNames: [String]
+    let masterNames: [String]
+    let apprenticeNames: [String]
 }
