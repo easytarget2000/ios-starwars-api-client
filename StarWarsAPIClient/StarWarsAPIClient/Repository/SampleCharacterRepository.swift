@@ -7,10 +7,10 @@ internal final class SampleCharacterRepository: CharacterRepository {
         }
     }
     
-    private static func nextCharacter(id: Int) -> Character {
+    static func nextCharacter(id: Int) -> Character {
         return .init(
             id: id,
-            name: "Sample Name",
+            name: "Sample Name \(id)",
             heightM: 2.0,
             massKG: 100.0,
             gender: "Sample Gender",
