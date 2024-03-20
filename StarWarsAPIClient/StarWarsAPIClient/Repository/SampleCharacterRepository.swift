@@ -16,7 +16,8 @@ internal final class SampleCharacterRepository: CharacterRepository {
             gender: "Sample Gender",
             homeworldName: "Sample Homeworld",
             wikiURL: "https://sample_url",
-            imageURL: "https://sample_url",
+            imageURL:
+                "https://vignette.wikia.nocookie.net/starwars/images/2/20/LukeTLJ.jpg",
             yearOfBirth: 10,
             placeOfBirthName: "Sample Birthplace",
             yearOfDeath: 100,
