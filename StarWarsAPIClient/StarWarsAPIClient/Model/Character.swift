@@ -1,8 +1,8 @@
 internal struct Character: Identifiable {
     let id: Int
     let name: String
-    let heightM: Float
-    let massKG: Float
+    let heightM: Double
+    let massKG: Double
     let gender: String
     let homeworldName: String
     let wikiURL: String
