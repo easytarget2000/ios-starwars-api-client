@@ -14,14 +14,14 @@ internal struct NetworkCharacter: Decodable {
     let dateCreated: Int?
     let dateDestroyed: Int?
     let destroyedLocation: String?
-    let homeworld: VarStringDecodable?
+    let homeworld: VarDecodable<String, [String]>?
     let creator: String?
     let manufacturer: String?
     let model: String?
     let `class`: String?
     let species: String
-    let cybernetics: VarStringDecodable?
-    let equipment: VarStringDecodable?
+    let cybernetics: VarDecodable<String, [String]>?
+    let equipment: VarDecodable<String, [String]>?
     let hairColor: String?
     let eyeColor: String?
     let skinColor: String?
@@ -29,8 +29,8 @@ internal struct NetworkCharacter: Decodable {
     let platingColor: String?
     let affiliations: [String]
     let formerAffiliations: [String]
-    let masters: VarStringDecodable?
-    let apprentices: VarStringDecodable?
+    let masters: VarDecodable<String, [String]>?
+    let apprentices: VarDecodable<String, [String]>?
 }
 
 extension NetworkCharacter {

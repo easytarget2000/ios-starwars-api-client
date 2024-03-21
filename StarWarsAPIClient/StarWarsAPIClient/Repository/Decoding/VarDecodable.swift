@@ -10,13 +10,23 @@ internal enum VarDecodable<T, U>: Decodable where T: Decodable, U: Decodable {
         } else if let numericValue = try? container.decode(U.self) {
             self = .uValue(numericValue)
         } else {
-            throw DecodingError.typeMismatch(
-                VarStringDecodable.self,
-                DecodingError.Context(
-                    codingPath: decoder.codingPath,
-                    debugDescription: "Unexpected data type."
-                )
+            let debugDescription = "Expected \(T.Type.self) or \(U.Type.self)."
+            let errorContext = DecodingError.Context(
+                codingPath: decoder.codingPath,
+                debugDescription: debugDescription
             )
+            throw DecodingError.typeMismatch(VarDecodable.self, errorContext)
+        }
+    }
+}
+
+extension VarDecodable where U == Array<T> {
+    func values() -> [T] {
+        switch self {
+        case .tValue(let singleValue):
+            return [singleValue]
+        case .uValue(let array):
+            return array
         }
     }
 }
