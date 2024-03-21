@@ -1,14 +1,16 @@
-import os
 import SwiftUI
 
 internal struct CharacterListView: View {
-    let repository: CharacterRepository
-    @State private var characters: [Character] = []
-    private let queryLogger = Logger(subsystem: "Main", category: "Query")
-
+    @StateObject private var viewModel: CharacterListViewModel
+    
+    init(repository: CharacterRepository) {
+        let viewModel = CharacterListViewModel(repository: repository)
+        self._viewModel = StateObject(wrappedValue: viewModel)
+    }
+    
     var body: some View {
         List {
-            ForEach(self.characters) { character in
+            ForEach(self.viewModel.characters) { character in
                 NavigationLink {
                     CharacterDetailView(character: character)
                 } label: {
@@ -17,12 +19,7 @@ internal struct CharacterListView: View {
             }
         }
         .task {
-            do {
-                self.characters = try await repository.query()
-            } catch let error {
-                self.characters = []
-                self.queryLogger.error("Unable to query characters: \(error)")
-            }
+            await self.viewModel.queryCharacters()
         }
     }
 }
