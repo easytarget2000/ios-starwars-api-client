@@ -24,6 +24,7 @@
 		30A84C762BAB03CD00CA5BAE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30A84C752BAB03CD00CA5BAE /* Preview Assets.xcassets */; };
 		30A84C8A2BAB03CD00CA5BAE /* StarWarsAPIClientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A84C892BAB03CD00CA5BAE /* StarWarsAPIClientUITests.swift */; };
 		30A84C8C2BAB03CD00CA5BAE /* StarWarsAPIClientUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A84C8B2BAB03CD00CA5BAE /* StarWarsAPIClientUITestsLaunchTests.swift */; };
+		30D3FC642BAC8FE4002B4DEB /* VarStringDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D3FC632BAC8FE4002B4DEB /* VarStringDecodable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		30A84C852BAB03CD00CA5BAE /* StarWarsAPIClientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarWarsAPIClientUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		30A84C892BAB03CD00CA5BAE /* StarWarsAPIClientUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsAPIClientUITests.swift; sourceTree = "<group>"; };
 		30A84C8B2BAB03CD00CA5BAE /* StarWarsAPIClientUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsAPIClientUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		30D3FC632BAC8FE4002B4DEB /* VarStringDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VarStringDecodable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,11 +114,10 @@
 		3029F7762BAB3AC200DFAF77 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				30D3FC652BAC8FE9002B4DEB /* Decoding */,
 				3029F7792BAB3B0200DFAF77 /* CharacterRepository.swift */,
-				309D6A9B2BAC542E005E3D62 /* NetworkCharacter.swift */,
 				309D6A9E2BAC5662005E3D62 /* NetworkCharacterRepository.swift */,
 				3029F7772BAB3AE400DFAF77 /* SampleCharacterRepository.swift */,
-				309D6AA22BAC5C58005E3D62 /* NetworkCharacterDecoder.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -124,8 +125,7 @@
 		309D6AA42BAC5CE0005E3D62 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
-				309D6AA02BAC59F5005E3D62 /* all.json */,
-				30A84C7F2BAB03CD00CA5BAE /* NetworkCharacterDecoderTests.swift */,
+				30D3FC662BAC9006002B4DEB /* Decoding */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -187,6 +187,25 @@
 				30A84C8B2BAB03CD00CA5BAE /* StarWarsAPIClientUITestsLaunchTests.swift */,
 			);
 			path = StarWarsAPIClientUITests;
+			sourceTree = "<group>";
+		};
+		30D3FC652BAC8FE9002B4DEB /* Decoding */ = {
+			isa = PBXGroup;
+			children = (
+				309D6A9B2BAC542E005E3D62 /* NetworkCharacter.swift */,
+				309D6AA22BAC5C58005E3D62 /* NetworkCharacterDecoder.swift */,
+				30D3FC632BAC8FE4002B4DEB /* VarStringDecodable.swift */,
+			);
+			path = Decoding;
+			sourceTree = "<group>";
+		};
+		30D3FC662BAC9006002B4DEB /* Decoding */ = {
+			isa = PBXGroup;
+			children = (
+				309D6AA02BAC59F5005E3D62 /* all.json */,
+				30A84C7F2BAB03CD00CA5BAE /* NetworkCharacterDecoderTests.swift */,
+			);
+			path = Decoding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -333,6 +352,7 @@
 				30A84C6F2BAB03CC00CA5BAE /* MainView.swift in Sources */,
 				3029F7782BAB3AE400DFAF77 /* SampleCharacterRepository.swift in Sources */,
 				30110FF52BAB5A700041F909 /* CharacterListView.swift in Sources */,
+				30D3FC642BAC8FE4002B4DEB /* VarStringDecodable.swift in Sources */,
 				30A84C712BAB03CC00CA5BAE /* Character.swift in Sources */,
 				309D6AA32BAC5C58005E3D62 /* NetworkCharacterDecoder.swift in Sources */,
 				30110FF32BAB5A580041F909 /* CharacterDetailView.swift in Sources */,

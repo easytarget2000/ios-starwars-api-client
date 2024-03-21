@@ -13,11 +13,14 @@ internal struct NetworkCharacter: Decodable {
     let dateCreated: Int?
     let dateDestroyed: Int?
     let destroyedLocation: String?
+    let homeworld: VarStringDecodable?
     let creator: String?
     let manufacturer: String?
     let model: String?
     let `class`: String?
     let species: String
+    let cybernetics: VarStringDecodable?
+    let equipment: VarStringDecodable?
     let hairColor: String?
     let eyeColor: String?
     let skinColor: String?
@@ -25,6 +28,8 @@ internal struct NetworkCharacter: Decodable {
     let platingColor: String?
     let affiliations: [String]
     let formerAffiliations: [String]
+    let masters: VarStringDecodable?
+    let apprentices: VarStringDecodable?
 }
 
 extension NetworkCharacter {
@@ -41,7 +46,7 @@ extension NetworkCharacter {
             heightM: self.height,
             massKG: massKG,
             gender: self.gender,
-            homeworldNames: [], // TODO: #9
+            homeworldNames: self.homeworld?.values() ?? [],
             wikiURL: self.wiki,
             imageURL: self.image,
             yearOfBirth: nil, // TODO: #9
@@ -60,12 +65,12 @@ extension NetworkCharacter {
             eyeColor: self.eyeColor,
             sensorColor: self.sensorColor,
             platingColor: self.platingColor,
-            cybernetics: [], // TODO: #9
-            equipment: [], // TODO: #9
+            cybernetics: self.cybernetics?.values() ?? [],
+            equipment: self.equipment?.values() ?? [],
             affiliationNames: self.affiliations,
             formerAffiliationNames: self.formerAffiliations,
-            masterNames: [], // TODO: #9
-            apprenticeNames: [] // TODO: #9
+            masterNames: self.masters?.values() ?? [],
+            apprenticeNames: self.apprentices?.values() ?? []
         )
     }
 }
