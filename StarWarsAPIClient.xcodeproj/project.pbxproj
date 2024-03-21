@@ -12,6 +12,7 @@
 		30110FF72BAB8C3E0041F909 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 30110FF62BAB8C3E0041F909 /* Localizable.xcstrings */; };
 		3029F7782BAB3AE400DFAF77 /* SampleCharacterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3029F7772BAB3AE400DFAF77 /* SampleCharacterRepository.swift */; };
 		3029F77A2BAB3B0200DFAF77 /* CharacterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3029F7792BAB3B0200DFAF77 /* CharacterRepository.swift */; };
+		308FE1AD2BACD7C900737432 /* CharacterDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308FE1AC2BACD7C900737432 /* CharacterDetailViewModel.swift */; };
 		309D6A9C2BAC542E005E3D62 /* NetworkCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309D6A9B2BAC542E005E3D62 /* NetworkCharacter.swift */; };
 		309D6A9F2BAC5662005E3D62 /* NetworkCharacterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309D6A9E2BAC5662005E3D62 /* NetworkCharacterRepository.swift */; };
 		309D6AA32BAC5C58005E3D62 /* NetworkCharacterDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309D6AA22BAC5C58005E3D62 /* NetworkCharacterDecoder.swift */; };
@@ -50,6 +51,7 @@
 		30110FF62BAB8C3E0041F909 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		3029F7772BAB3AE400DFAF77 /* SampleCharacterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleCharacterRepository.swift; sourceTree = "<group>"; };
 		3029F7792BAB3B0200DFAF77 /* CharacterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRepository.swift; sourceTree = "<group>"; };
+		308FE1AC2BACD7C900737432 /* CharacterDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewModel.swift; sourceTree = "<group>"; };
 		309D6A9B2BAC542E005E3D62 /* NetworkCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCharacter.swift; sourceTree = "<group>"; };
 		309D6A9E2BAC5662005E3D62 /* NetworkCharacterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCharacterRepository.swift; sourceTree = "<group>"; };
 		309D6AA02BAC59F5005E3D62 /* all.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = all.json; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				30A84C6E2BAB03CC00CA5BAE /* MainView.swift */,
 				30110FF22BAB5A580041F909 /* CharacterDetailView.swift */,
 				30110FF42BAB5A700041F909 /* CharacterListView.swift */,
+				308FE1AC2BACD7C900737432 /* CharacterDetailViewModel.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -357,6 +360,7 @@
 				309D6AA32BAC5C58005E3D62 /* NetworkCharacterDecoder.swift in Sources */,
 				30110FF32BAB5A580041F909 /* CharacterDetailView.swift in Sources */,
 				309D6A9C2BAC542E005E3D62 /* NetworkCharacter.swift in Sources */,
+				308FE1AD2BACD7C900737432 /* CharacterDetailViewModel.swift in Sources */,
 				30A84C6D2BAB03CC00CA5BAE /* App.swift in Sources */,
 				3029F77A2BAB3B0200DFAF77 /* CharacterRepository.swift in Sources */,
 			);

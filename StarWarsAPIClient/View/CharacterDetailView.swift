@@ -1,39 +1,35 @@
 import SwiftUI
 
 internal struct CharacterDetailView: View {
-    let character: Character
+    let viewModel: CharacterDetailViewModel
+    
+    init(character: Character) {
+        self.viewModel = CharacterDetailViewModel(character: character)
+    }
     
     var body: some View {
         VStack {
-            Text(self.character.name)
+            Text(self.viewModel.formattedName)
             
-            if let imageURL = self.character.imageURL {
-                AsyncImage(url: URL(string: imageURL)) { $0.resizable().scaledToFit()
+            if let imageURL = self.viewModel.imageURL {
+                AsyncImage(url: imageURL) {
+                    $0.resizable().scaledToFit()
                 } placeholder: {
                     ProgressView()
                 }
                 .frame(height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
             }
             
-            if let heightM = self.character.heightM {
-                Text(
-                    localizedString(for: "character_height_m_format", heightM)
-                )
+            if let height = self.viewModel.labeledHeight {
+                Text(height)
             }
             
-            if let massKG = self.character.massKG {
-                Text(
-                    localizedString(for: "character_mass_kg_format", massKG)
-                )
+            if let mass = self.viewModel.labeledMass {
+                Text(mass)
             }
         }
         .padding()
     }
-}
-
-fileprivate func localizedString(for key: String, _ arguments: CVarArg...)
--> String {
-    String(format: NSLocalizedString(key, comment: ""), arguments: arguments)
 }
 
 #Preview {
