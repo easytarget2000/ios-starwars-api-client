@@ -2,6 +2,10 @@ import SwiftUI
 
 struct MainView: View {
     let repository: CharacterRepository
+    
+    init(repository: CharacterRepository = NetworkCharacterRepository()) {
+        self.repository = repository
+    }
 
     var body: some View {
         NavigationSplitView {
