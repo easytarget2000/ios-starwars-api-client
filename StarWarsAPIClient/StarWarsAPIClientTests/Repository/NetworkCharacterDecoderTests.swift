@@ -9,7 +9,8 @@ final class NetworkCharacterDecoderTests: XCTestCase {
         
         let sut = NetworkCharacterDecoder()
         let result = try sut.decode(inputData)
+        let expectedNumberOfEntries = 87
         
-        XCTAssertEqual(result.count, 42)
+        XCTAssertEqual(result.count, expectedNumberOfEntries)
     }
 }
