@@ -22,6 +22,17 @@
           }
         }
       }
+    },
+    "main_nav_detail" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Select an Item"
+          }
+        }
+      }
     }
   },
   "version" : "1.0"

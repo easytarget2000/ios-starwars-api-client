@@ -7,7 +7,7 @@ struct MainView: View {
         NavigationSplitView {
             CharacterListView(repository: self.repository)
         } detail: {
-            Text("Select an item")
+            Text("main_nav_detail")
         }
     }
 }
