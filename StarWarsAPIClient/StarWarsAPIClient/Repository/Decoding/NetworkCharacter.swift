@@ -7,6 +7,7 @@ internal struct NetworkCharacter: Decodable {
     let gender: String?
     let wiki: String?
     let image: String?
+    let born: VarDecodable<String, Int>?
     let bornLocation: String?
     let died: Int?
     let diedLocation: String?
@@ -33,10 +34,19 @@ internal struct NetworkCharacter: Decodable {
 }
 
 extension NetworkCharacter {
-    func internalType() -> Character {
+    func internalValue() -> Character {
         let massKG: Double? = if let mass = self.mass {
             Double(mass)
         } else {
+            nil
+        }
+        
+        let yearOfBirth: Character.YearOfBirth? = switch born {
+        case .tValue(let description):
+            .description(description)
+        case .uValue(let year):
+            .year(year)
+        case .none:
             nil
         }
         
@@ -49,7 +59,7 @@ extension NetworkCharacter {
             homeworldNames: self.homeworld?.values() ?? [],
             wikiURL: self.wiki,
             imageURL: self.image,
-            yearOfBirth: nil, // TODO: #9
+            yearOfBirth: yearOfBirth,
             placeOfBirthName: self.bornLocation,
             yearOfDeath: self.died,
             placeOfDeathName: self.diedLocation,

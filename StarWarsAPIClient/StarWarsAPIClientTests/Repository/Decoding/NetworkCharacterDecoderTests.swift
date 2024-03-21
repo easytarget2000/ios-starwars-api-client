@@ -18,7 +18,7 @@ final class NetworkCharacterDecoderTests: XCTestCase {
         
         let sut = NetworkCharacterDecoder()
         let observedCharacter = try sut.decode(inputData).first { $0.id == 14 }!
-        let result = observedCharacter.homeworld!.names()
+        let result = observedCharacter.homeworld!.values()
         
         XCTAssertEqual(result.count, 1)
         XCTAssertEqual(result.first!, "corellia")
@@ -30,11 +30,45 @@ final class NetworkCharacterDecoderTests: XCTestCase {
         
         let sut = NetworkCharacterDecoder()
         let observedCharacter = try sut.decode(inputData).first { $0.id == 15 }!
-        let result = observedCharacter.homeworld!.names()
+        let result = observedCharacter.homeworld!.values()
         
         XCTAssertEqual(result.count, 2)
         XCTAssertEqual(result[0], "Rodia")
         XCTAssertEqual(result[1], "Tatooine")
+    }
+    
+    func testDecode_givenValueWithNumericYearOfBirth_returnsCorrectYear()
+    throws {
+        let inputData = try self.allValuesData()
+        
+        let sut = NetworkCharacterDecoder()
+        let observedCharacter = try sut.decode(inputData).first { $0.id == 1 }!
+        let enumResult = observedCharacter.born!
+        let lukeYearOfBirth = -19
+        
+        switch enumResult {
+        case .uValue(let result):
+            XCTAssertEqual(result, lukeYearOfBirth)
+        default:
+            XCTFail("Unexpected type")
+        }
+    }
+    
+    func testDecode_givenValueWithBirthDateDescription_returnsCorrectDescription()
+    throws {
+        let inputData = try self.allValuesData()
+        
+        let sut = NetworkCharacterDecoder()
+        let observedCharacter = try sut.decode(inputData).first { $0.id == 22 }!
+        let enumResult = observedCharacter.born!
+        let expectedWord = "after"
+        
+        switch enumResult {
+        case .tValue(let result):
+            XCTAssert(result.contains(expectedWord))
+        default:
+            XCTFail("Unexpected type")
+        }
     }
     
     private func allValuesData() throws -> Data {

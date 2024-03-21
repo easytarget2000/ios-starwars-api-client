@@ -25,6 +25,7 @@
 		30A84C8A2BAB03CD00CA5BAE /* StarWarsAPIClientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A84C892BAB03CD00CA5BAE /* StarWarsAPIClientUITests.swift */; };
 		30A84C8C2BAB03CD00CA5BAE /* StarWarsAPIClientUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A84C8B2BAB03CD00CA5BAE /* StarWarsAPIClientUITestsLaunchTests.swift */; };
 		30D3FC642BAC8FE4002B4DEB /* VarStringDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D3FC632BAC8FE4002B4DEB /* VarStringDecodable.swift */; };
+		30D3FC682BAC914E002B4DEB /* VarDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D3FC672BAC914E002B4DEB /* VarDecodable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		30A84C892BAB03CD00CA5BAE /* StarWarsAPIClientUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsAPIClientUITests.swift; sourceTree = "<group>"; };
 		30A84C8B2BAB03CD00CA5BAE /* StarWarsAPIClientUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsAPIClientUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		30D3FC632BAC8FE4002B4DEB /* VarStringDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VarStringDecodable.swift; sourceTree = "<group>"; };
+		30D3FC672BAC914E002B4DEB /* VarDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VarDecodable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +197,7 @@
 				309D6A9B2BAC542E005E3D62 /* NetworkCharacter.swift */,
 				309D6AA22BAC5C58005E3D62 /* NetworkCharacterDecoder.swift */,
 				30D3FC632BAC8FE4002B4DEB /* VarStringDecodable.swift */,
+				30D3FC672BAC914E002B4DEB /* VarDecodable.swift */,
 			);
 			path = Decoding;
 			sourceTree = "<group>";
@@ -352,6 +355,7 @@
 				30A84C6F2BAB03CC00CA5BAE /* MainView.swift in Sources */,
 				3029F7782BAB3AE400DFAF77 /* SampleCharacterRepository.swift in Sources */,
 				30110FF52BAB5A700041F909 /* CharacterListView.swift in Sources */,
+				30D3FC682BAC914E002B4DEB /* VarDecodable.swift in Sources */,
 				30D3FC642BAC8FE4002B4DEB /* VarStringDecodable.swift in Sources */,
 				30A84C712BAB03CC00CA5BAE /* Character.swift in Sources */,
 				309D6AA32BAC5C58005E3D62 /* NetworkCharacterDecoder.swift in Sources */,

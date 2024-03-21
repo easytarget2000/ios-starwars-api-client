@@ -5,10 +5,10 @@ enum VarStringDecodable: Decodable {
     init(from decoder: Decoder) throws {
         let container = try decoder.singleValueContainer()
 
-        if let homeworldString = try? container.decode(String.self) {
-            self = .single(homeworldString)
-        } else if let homeworldArray = try? container.decode([String].self) {
-            self = .multiple(homeworldArray)
+        if let singleValue = try? container.decode(String.self) {
+            self = .single(singleValue)
+        } else if let multipleValues = try? container.decode([String].self) {
+            self = .multiple(multipleValues)
         } else {
             throw DecodingError.typeMismatch(
                 VarStringDecodable.self,

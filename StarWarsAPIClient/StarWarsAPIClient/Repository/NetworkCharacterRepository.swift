@@ -8,6 +8,6 @@ internal class NetworkCharacterRepository: CharacterRepository {
     func query() async throws -> [Character] {
         let (data, _) = try await URLSession.shared.data(from: Self.url)
         let characters = try self.decoder.decode(data)
-        return characters.map { $0.internalType() }
+        return characters.map { $0.internalValue() }
     }
 }

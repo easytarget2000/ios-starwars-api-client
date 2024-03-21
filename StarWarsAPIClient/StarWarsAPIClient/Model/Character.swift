@@ -7,7 +7,7 @@ internal struct Character: Identifiable {
     let homeworldNames: [String]
     let wikiURL: String?
     let imageURL: String?
-    let yearOfBirth: Int?
+    let yearOfBirth: YearOfBirth?
     let placeOfBirthName: String?
     let yearOfDeath: Int?
     let placeOfDeathName: String?
@@ -29,4 +29,9 @@ internal struct Character: Identifiable {
     let formerAffiliationNames: [String]
     let masterNames: [String]
     let apprenticeNames: [String]
+    
+    enum YearOfBirth {
+        case year(Int)
+        case description(String)
+    }
 }
