@@ -5,7 +5,7 @@ import SwiftData
 struct App: SwiftUI.App {
     var body: some Scene {
         WindowGroup {
-            MainView(repository: SampleCharacterRepository())
+            MainView(repository: NetworkCharacterRepository())
         }
     }
 }

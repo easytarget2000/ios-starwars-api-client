@@ -7,25 +7,25 @@ internal struct CharacterDetailView: View {
         VStack {
             Text(self.character.name)
             
-            AsyncImage(url: URL(string: self.character.imageURL)) { $0.resizable().scaledToFit()
-            } placeholder: {
-                ProgressView()
+            if let imageURL = self.character.imageURL {
+                AsyncImage(url: URL(string: imageURL)) { $0.resizable().scaledToFit()
+                } placeholder: {
+                    ProgressView()
+                }
+                .frame(height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
             }
-            .frame(height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
             
-            Text(
-                localizedString(
-                    for: "character_height_m_format",
-                    self.character.heightM
+            if let heightM = self.character.heightM {
+                Text(
+                    localizedString(for: "character_height_m_format", heightM)
                 )
-            )
+            }
             
-            Text(
-                localizedString(
-                    for: "character_mass_kg_format",
-                    self.character.massKG
+            if let massKG = self.character.massKG {
+                Text(
+                    localizedString(for: "character_mass_kg_format", massKG)
                 )
-            )
+            }
         }
         .padding()
     }

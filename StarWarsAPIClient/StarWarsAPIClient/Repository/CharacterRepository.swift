@@ -1,3 +1,3 @@
 internal protocol CharacterRepository {
-    func query() -> [Character]
+    func query() async throws -> [Character]
 }

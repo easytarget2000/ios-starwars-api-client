@@ -13,12 +13,15 @@
 		3029F7782BAB3AE400DFAF77 /* SampleCharacterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3029F7772BAB3AE400DFAF77 /* SampleCharacterRepository.swift */; };
 		3029F77A2BAB3B0200DFAF77 /* CharacterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3029F7792BAB3B0200DFAF77 /* CharacterRepository.swift */; };
 		309D6A9C2BAC542E005E3D62 /* NetworkCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309D6A9B2BAC542E005E3D62 /* NetworkCharacter.swift */; };
+		309D6A9F2BAC5662005E3D62 /* NetworkCharacterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309D6A9E2BAC5662005E3D62 /* NetworkCharacterRepository.swift */; };
+		309D6AA12BAC59F5005E3D62 /* all.json in Resources */ = {isa = PBXBuildFile; fileRef = 309D6AA02BAC59F5005E3D62 /* all.json */; };
+		309D6AA32BAC5C58005E3D62 /* NetworkCharacterDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309D6AA22BAC5C58005E3D62 /* NetworkCharacterDecoder.swift */; };
 		30A84C6D2BAB03CC00CA5BAE /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A84C6C2BAB03CC00CA5BAE /* App.swift */; };
 		30A84C6F2BAB03CC00CA5BAE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A84C6E2BAB03CC00CA5BAE /* MainView.swift */; };
 		30A84C712BAB03CC00CA5BAE /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A84C702BAB03CC00CA5BAE /* Character.swift */; };
 		30A84C732BAB03CD00CA5BAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30A84C722BAB03CD00CA5BAE /* Assets.xcassets */; };
 		30A84C762BAB03CD00CA5BAE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30A84C752BAB03CD00CA5BAE /* Preview Assets.xcassets */; };
-		30A84C802BAB03CD00CA5BAE /* StarWarsAPIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A84C7F2BAB03CD00CA5BAE /* StarWarsAPIClientTests.swift */; };
+		30A84C802BAB03CD00CA5BAE /* NetworkCharacterDecoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A84C7F2BAB03CD00CA5BAE /* NetworkCharacterDecoderTests.swift */; };
 		30A84C8A2BAB03CD00CA5BAE /* StarWarsAPIClientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A84C892BAB03CD00CA5BAE /* StarWarsAPIClientUITests.swift */; };
 		30A84C8C2BAB03CD00CA5BAE /* StarWarsAPIClientUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A84C8B2BAB03CD00CA5BAE /* StarWarsAPIClientUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
@@ -47,6 +50,9 @@
 		3029F7772BAB3AE400DFAF77 /* SampleCharacterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleCharacterRepository.swift; sourceTree = "<group>"; };
 		3029F7792BAB3B0200DFAF77 /* CharacterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRepository.swift; sourceTree = "<group>"; };
 		309D6A9B2BAC542E005E3D62 /* NetworkCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCharacter.swift; sourceTree = "<group>"; };
+		309D6A9E2BAC5662005E3D62 /* NetworkCharacterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCharacterRepository.swift; sourceTree = "<group>"; };
+		309D6AA02BAC59F5005E3D62 /* all.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = all.json; sourceTree = "<group>"; };
+		309D6AA22BAC5C58005E3D62 /* NetworkCharacterDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCharacterDecoder.swift; sourceTree = "<group>"; };
 		30A84C692BAB03CC00CA5BAE /* StarWarsAPIClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarWarsAPIClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30A84C6C2BAB03CC00CA5BAE /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		30A84C6E2BAB03CC00CA5BAE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -54,7 +60,7 @@
 		30A84C722BAB03CD00CA5BAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30A84C752BAB03CD00CA5BAE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		30A84C7B2BAB03CD00CA5BAE /* StarWarsAPIClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarWarsAPIClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		30A84C7F2BAB03CD00CA5BAE /* StarWarsAPIClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsAPIClientTests.swift; sourceTree = "<group>"; };
+		30A84C7F2BAB03CD00CA5BAE /* NetworkCharacterDecoderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCharacterDecoderTests.swift; sourceTree = "<group>"; };
 		30A84C852BAB03CD00CA5BAE /* StarWarsAPIClientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarWarsAPIClientUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		30A84C892BAB03CD00CA5BAE /* StarWarsAPIClientUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsAPIClientUITests.swift; sourceTree = "<group>"; };
 		30A84C8B2BAB03CD00CA5BAE /* StarWarsAPIClientUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsAPIClientUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -106,9 +112,20 @@
 		3029F7762BAB3AC200DFAF77 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
-				3029F7772BAB3AE400DFAF77 /* SampleCharacterRepository.swift */,
 				3029F7792BAB3B0200DFAF77 /* CharacterRepository.swift */,
 				309D6A9B2BAC542E005E3D62 /* NetworkCharacter.swift */,
+				309D6A9E2BAC5662005E3D62 /* NetworkCharacterRepository.swift */,
+				3029F7772BAB3AE400DFAF77 /* SampleCharacterRepository.swift */,
+				309D6AA22BAC5C58005E3D62 /* NetworkCharacterDecoder.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		309D6AA42BAC5CE0005E3D62 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				309D6AA02BAC59F5005E3D62 /* all.json */,
+				30A84C7F2BAB03CD00CA5BAE /* NetworkCharacterDecoderTests.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -158,7 +175,7 @@
 		30A84C7E2BAB03CD00CA5BAE /* StarWarsAPIClientTests */ = {
 			isa = PBXGroup;
 			children = (
-				30A84C7F2BAB03CD00CA5BAE /* StarWarsAPIClientTests.swift */,
+				309D6AA42BAC5CE0005E3D62 /* Repository */,
 			);
 			path = StarWarsAPIClientTests;
 			sourceTree = "<group>";
@@ -286,6 +303,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				309D6AA12BAC59F5005E3D62 /* all.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,10 +321,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				309D6A9F2BAC5662005E3D62 /* NetworkCharacterRepository.swift in Sources */,
 				30A84C6F2BAB03CC00CA5BAE /* MainView.swift in Sources */,
 				3029F7782BAB3AE400DFAF77 /* SampleCharacterRepository.swift in Sources */,
 				30110FF52BAB5A700041F909 /* CharacterListView.swift in Sources */,
 				30A84C712BAB03CC00CA5BAE /* Character.swift in Sources */,
+				309D6AA32BAC5C58005E3D62 /* NetworkCharacterDecoder.swift in Sources */,
 				30110FF32BAB5A580041F909 /* CharacterDetailView.swift in Sources */,
 				309D6A9C2BAC542E005E3D62 /* NetworkCharacter.swift in Sources */,
 				30A84C6D2BAB03CC00CA5BAE /* App.swift in Sources */,
@@ -318,7 +338,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30A84C802BAB03CD00CA5BAE /* StarWarsAPIClientTests.swift in Sources */,
+				30A84C802BAB03CD00CA5BAE /* NetworkCharacterDecoderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -536,7 +556,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -555,7 +574,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
