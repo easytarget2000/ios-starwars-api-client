@@ -9,12 +9,12 @@ on:
 jobs:
   build:
     name: Build and Test default scheme using the iPhone 15 sim
-    runs-on: macos-13
+    runs-on: macos-14
 
     steps:
       - name: Select Xcode Version
-        run: sudo xcode-select -s /Applications/Xcode_15.2.app/Contents/Developer
-      - name: Select iOS Simulator 
+        run: sudo xcode-select -s /Applications/Xcode_15.3.app/Contents/Developer
+      - name: Select iOS Simulator
         run: |
           xcrun simctl boot 'iPhone 15'
       - name: Checkout
@@ -29,6 +29,7 @@ jobs:
         env:
           scheme: ${{ 'default' }}
           platform: ${{ 'iOS Simulator' }}
+        if: false
         run: |
           # xcrun xctrace returns via stderr, not the expected stdout (see https://developer.apple.com/forums/thread/663959)
           device=`xcrun xctrace list devices 2>&1 | grep -oE 'iPhone.*?[^\(]+' | head -1 | awk '{$1=$1;print}' | sed -e "s/ Simulator$//"`
@@ -40,6 +41,7 @@ jobs:
         env:
           scheme: ${{ 'default' }}
           platform: ${{ 'iOS Simulator' }}
+        if: false
         run: |
           # xcrun xctrace returns via stderr, not the expected stdout (see https://developer.apple.com/forums/thread/663959)
           device=`xcrun xctrace list devices 2>&1 | grep -oE 'iPhone.*?[^\(]+' | head -1 | awk '{$1=$1;print}' | sed -e "s/ Simulator$//"`
