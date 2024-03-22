@@ -100,11 +100,11 @@
 		30110FF12BAB5A480041F909 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				30A84C6E2BAB03CC00CA5BAE /* MainView.swift */,
 				30110FF22BAB5A580041F909 /* CharacterDetailView.swift */,
-				30110FF42BAB5A700041F909 /* CharacterListView.swift */,
 				308FE1AC2BACD7C900737432 /* CharacterDetailViewModel.swift */,
+				30110FF42BAB5A700041F909 /* CharacterListView.swift */,
 				308FE1AE2BACDB4A00737432 /* CharacterListViewModel.swift */,
+				30A84C6E2BAB03CC00CA5BAE /* MainView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
