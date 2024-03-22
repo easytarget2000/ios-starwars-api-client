@@ -1,11 +1,11 @@
-name: iOS starter workflow
+name: General iOS Workflow
 
 on:
   push:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
-    
+
 jobs:
   build:
     name: Build and Test default scheme using the iPhone 15 sim
