@@ -4,7 +4,7 @@ A (somewhat) generic REST API client for iOS for fetching and displaying data, d
 
 # Requirements
 
-- Xcode supporting iOS 17.4, Xcode 15.3 recommended
+- Xcode supporting iOS 17.2 or higher, Xcode 15.3 recommended
 
 # Contribution
 
